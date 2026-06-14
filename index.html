@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://unpkg.com/lucide-static@latest/font/lucide.css);
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+      html, body {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      h1 {
+        margin: unset;
+        font-size: 4rem;
+      }
+    </style>
+    <!--$-->
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--/-->
+    <script src="main.client.dart.js" defer></script>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+      @import url(https://unpkg.com/lucide-static@latest/font/lucide.css);
+      *,*::before,*::after {
+        box-sizing: border-box;
+      }
+      html, body {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        cursor: default;
+        color: #333333;
+        background-color: #F5F5F5;
+        scroll-behavior: smooth;
+      }
+      .container {
+        display: flex;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .main section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+      }
+      .custom_button {
+        display: flex;
+        height: 40px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border: none;
+        border-radius: 0.5em;
+        box-shadow: 10px 10px #333333;
+        transition: all 350ms;
+        align-items: center;
+        column-gap: 8px;
+        color: #F5F5F5;
+        font-family: 'Roboto';
+        font-weight: 500;
+        background-color: #01589B;
+      }
+      .custom_button:hover {
+        box-shadow: 5px 5px #666666;
+        cursor: pointer;
+        background-color: #1089E6;
+      }
+      .custom_button:active {
+        box-shadow: 2px 2px 4px #666666;
+        cursor: pointer;
+        color: #000000;
+        font-weight: 600;
+        background-color: #1089E6;
+      }
+      .welocome_screen_root {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        row-gap: 25px;
+        background-image: url(/images/box.svg);
+        background-repeat: repeat;
+        background-size: 300px 300px;
+        height: 100vh;
+        min-height: calc(100vh - 300.0px);
+      }
+      .container {
+        row-gap: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--@app-->
+    <div class="main">
+      <div class="welocome_screen_root">
+        <div class="container">
+          <h1 style="text-align: center; font-family: ui-sans-serif, system-ui, sans-serif; font-weight: 700">
+            The <span style="font-family: ui-sans-serif, system-ui, sans-serif; background: linear-gradient(90deg, #0A397F, #3FC3FE); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent">Flutter Catalog </span>
+            for Junior Developers
+          </h1>
+          <p style="padding-left: 10px; padding-right: 10px; margin: 0; color: #333333; text-align: center; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 1em; font-weight: 500">
+            Explore Flutter widgets with simple explanations, practical examples, and common use cases. This catalog is designed to help beginners learn, understand, and choose the right widget for their apps.
+          </p>
+          <button class="custom_button">Get Started<i class="icon-arrow-right" style="font-size: 1.2em"></i></button>
+        </div>
+      </div>
+    </div>
+    <!--/@app-->
+  </body>
+</html>
